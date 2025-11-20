@@ -70,5 +70,496 @@
 
     a {
       color: #015c89;
-      text-decoratio
+      text-decoration: underline;
+    }
 
+    a:focus,
+    button:focus,
+    input:focus {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 0;
+      padding: 0.5rem 0.75rem;
+      background-color: var(--color-primary);
+      color: #ffffff;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      left: 0.75rem;
+      top: 0.75rem;
+    }
+
+    header {
+      border-bottom: 4px solid var(--color-primary);
+      padding-bottom: 0.75rem;
+    }
+
+    .course-meta {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav[aria-label="Course navigation"] {
+      margin-top: 0.75rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 0.5rem;
+    }
+
+    nav[aria-label="Course navigation"] ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    nav[aria-label="Course navigation"] a {
+      text-decoration: none;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border);
+      background-color: var(--color-accent);
+      color: var(--color-text);
+      font-size: 0.9rem;
+    }
+
+    nav[aria-label="Course navigation"] a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding-top: 0.75rem;
+      font-size: 0.85rem;
+      color: #555555;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem;
+      }
+
+      nav[aria-label="Course navigation"] ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>Course Syllabus – IMT 598 G</h1>
+    <p class="course-meta">
+      Special Topics in Information Management
+    </p>
+    <p class="course-meta">
+      This page presents the full syllabus content in a structured, accessible format.
+    </p>
+
+    <nav aria-label="Course navigation">
+      <ul>
+        <li><a href="#course-description">Course description</a></li>
+        <li><a href="#writing-teamwork">Writing & teamwork</a></li>
+        <li><a href="#materials">Required materials</a></li>
+        <li><a href="#learning-outcomes">Learning outcomes</a></li>
+        <li><a href="#engagement">Engagement</a></li>
+        <li><a href="#assignments-grading">Assignments & grading</a></li>
+        <li><a href="#ai-tools">Generative AI tools</a></li>
+        <li><a href="#resources">Student resources</a></li>
+        <li><a href="#policies">Policies & conduct</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Course description -->
+    <section aria-labelledby="course-description">
+      <h2 id="course-description">Course / class description</h2>
+
+      <p>This course has three primary areas of focus:</p>
+      <ul>
+        <li><strong>Foundational IM knowledge</strong> – promoting a solid foundation of knowledge in the Information Management discipline.</li>
+        <li><strong>Analysis of emerging IM trends</strong> – using Gartner’s Hype Cycle and other resources to understand and analyze the impact of current IM trends on students’ careers and lives.</li>
+        <li><strong>Professional development</strong> – facilitating the design and planning of your career using design thinking practices and professional skills development.</li>
+      </ul>
+
+      <p>
+        Prior to each class session, please ensure that you have read all assigned materials so you can come prepared to participate.
+        The goal of each class session is to hear from the professor about the topic of the week, gain insight via readings and other
+        work completed outside of class, and then share thoughts and opinions in class with others. We will also actively engage in
+        hands-on work together in class and share that work with the group.
+      </p>
+
+      <p>Each class will generally be divided into sections such as:</p>
+      <ul>
+        <li>Outstanding issues, clarification points, assignment discussions.</li>
+        <li>Topic presentation and discussion from students.</li>
+        <li>Interactive group activities and design challenges.</li>
+        <li>Group session sharing and discussion.</li>
+        <li>Wrap up and overview of upcoming work.</li>
+      </ul>
+
+      <p>
+        For complete dates and weekly topics, see the Course Schedule page.
+      </p>
+    </section>
+
+    <!-- Writing & teamwork -->
+    <section aria-labelledby="writing-teamwork">
+      <h2 id="writing-teamwork">Writing, teamwork, and responsibilities</h2>
+
+      <h3>Writing</h3>
+      <p>
+        This class involves producing a number of written deliverables, as being able to write effectively and efficiently is a crucial professional skill.
+      </p>
+      <p>
+        You are expected to read the course writing guide and understand the expectations for writing in this class, including what instructors will look for and evaluate in your assignments. The guide is designed to help you:
+      </p>
+      <ul>
+        <li>Enhance your writing skills and express ideas clearly.</li>
+        <li>Strengthen your professional writing capabilities.</li>
+        <li>Use tools such as ChatGPT responsibly to support revision and clarity.</li>
+      </ul>
+
+      <h3>Teamwork</h3>
+      <p>
+        During this class you will work on a number of assignments and activities as a team. Developing teamwork skills is critical,
+        as information management systems often require many people working together to solve complex problems.
+      </p>
+      <p>
+        It is critical that all team members participate in all group assignments, including in-class group workshops. If one or more
+        teammates are not participating in every team activity, you must email the instructor as soon as possible. Do not wait until
+        the end of the quarter to report a lack of contribution.
+      </p>
+
+      <h3>Individual responsibilities</h3>
+      <ul>
+        <li><strong>Research and content creation:</strong> thoroughly research and create content for assigned sections, use reliable sources, and cite appropriately.</li>
+        <li><strong>Quality control:</strong> ensure your work is clear, concise, and free of errors (grammar, spelling, factual accuracy).</li>
+        <li><strong>Integration:</strong> coordinate with teammates to ensure your section aligns with others and contributes to a cohesive whole.</li>
+      </ul>
+
+      <h3>Collective responsibilities</h3>
+      <ul>
+        <li><strong>Overall quality:</strong> the team is collectively responsible for academic integrity, accuracy, and presentation.</li>
+        <li><strong>Professionalism:</strong> meet deadlines, respect each other’s views, and present the work professionally.</li>
+        <li><strong>Feedback and revisions:</strong> review feedback together and make necessary revisions to meet or exceed expectations.</li>
+      </ul>
+
+      <h3>Individual grading and consequences</h3>
+      <p>
+        Each student may receive an individual grade that reflects their contribution to the group’s work and deliverables. This approach:
+      </p>
+      <ul>
+        <li>Encourages equal participation and effort.</li>
+        <li>Acknowledges each member’s accountability.</li>
+        <li>Motivates students to contribute constructively to team success.</li>
+      </ul>
+      <p>
+        If you are not contributing, you may receive a grade of 0 points for each group project assignment.
+      </p>
+      <p>
+        If conflicts cannot be resolved internally within a group, there is a process to warn a team member and, in extreme cases,
+        remove them from the team. Refer to the teamwork guide for full details.
+      </p>
+    </section>
+
+    <!-- Required materials -->
+    <section aria-labelledby="materials">
+      <h2 id="materials">Required course materials</h2>
+
+      <ul>
+        <li><strong>Textbook:</strong> there is no required textbook. Readings will be available online and/or posted on Canvas.</li>
+        <li><strong>Canvas:</strong> Canvas will be used extensively for announcements, readings, discussion forums, and grades.</li>
+      </ul>
+
+      <p>
+        Additional readings can be found on the Course Schedule page.
+      </p>
+    </section>
+
+    <!-- Learning outcomes -->
+    <section aria-labelledby="learning-outcomes">
+      <h2 id="learning-outcomes">Student learning outcomes</h2>
+
+      <h3>1 – Foundational IM knowledge</h3>
+      <ul>
+        <li>Explain the role of information in business and society.</li>
+        <li>Explain the importance of effective information management.</li>
+        <li>Analyze business and organizational information management problems and opportunities.</li>
+      </ul>
+
+      <h3>2 – Analysis of emerging IM trends</h3>
+      <ul>
+        <li>Examine significant emerging IM trends and the enabling IT behind each.</li>
+        <li>Participate in discussions about the opportunities and challenges emerging IM trends present to business and society.</li>
+        <li>Sharpen analytical and critical thinking skills in the context of emerging IM trends.</li>
+        <li>Learn to intelligently predict the IM future of business and society.</li>
+      </ul>
+
+      <h3>3 – Professional development</h3>
+      <ul>
+        <li>Consider multiple career opportunities aligned with the MSIM program.</li>
+        <li>Create a skills and career development plan.</li>
+        <li>Demonstrate personal reflection and identify areas for growth and development.</li>
+      </ul>
+    </section>
+
+    <!-- Engagement -->
+    <section aria-labelledby="engagement">
+      <h2 id="engagement">Engagement expectations</h2>
+
+      <p>
+        Much of our time in this class will be spent in discussion and related activities. It is imperative that you come to class
+        prepared to engage so that meaningful discussion can take place.
+      </p>
+
+      <h3>Attendance</h3>
+      <ul>
+        <li>Attend every class session; missing class limits your ability to engage in graded activities.</li>
+        <li>Unexcused absences will result in a grade of 0 for that day’s in-class activities.</li>
+        <li>Arrive on time and prepared to discuss the day’s topics and activities.</li>
+      </ul>
+
+      <h3>Participation and professionalism</h3>
+      <ul>
+        <li>Maintain a positive attitude, make constructive comments, and be attentive.</li>
+        <li>Practice thoughtful mobile device etiquette.</li>
+        <li>Come prepared with questions and comments on the topics of the day.</li>
+        <li>Participate actively in team discussions during breakout activities.</li>
+        <li>Make it a goal to contribute to class discussions in every session.</li>
+      </ul>
+
+      <p>
+        Excused absences for religious observation will be granted in accordance with University of Washington policy.
+        If you need to miss class, communicate with your instructor and team members to minimize impact and determine
+        options for making up missed work.
+      </p>
+    </section>
+
+    <!-- Assignments and grading -->
+    <section aria-labelledby="assignments-grading">
+      <h2 id="assignments-grading">Assignments and grading</h2>
+
+      <p>
+        All assignments are to be completed and submitted individually or as a group, according to the instructions for each assignment.
+        Full assignment details and due dates are available on the Assignments page.
+      </p>
+
+      <p>
+        This course uses the iSchool Graduate Grading Scheme, which converts percentage grades into 4.0 grades.
+      </p>
+
+      <h3>Late policy</h3>
+      <p>
+        You are expected to submit all work by the deadline. This respects the time your instructor and grader have set aside for
+        timely feedback.
+      </p>
+
+      <h3>Extenuating circumstances</h3>
+      <p>
+        If extenuating circumstances prevent you from submitting on time, contact your instructor. Examples include:
+      </p>
+      <ul>
+        <li>Situations related to physical or mental health.</li>
+        <li>Caring for someone who is ill.</li>
+        <li>Death of a family member or loved one.</li>
+        <li>Your laptop being stolen or becoming inoperable.</li>
+        <li>Network outages or power failures.</li>
+        <li>Similar unexpected circumstances.</li>
+      </ul>
+      <p>
+        Please do not send documentation such as medical notes or photographs; a short email explaining the situation is sufficient.
+        If you feel you need to lie, talk to the instructor instead.
+      </p>
+      <p>
+        By general iSchool policy, weddings and other family celebrations do not warrant an extension.
+      </p>
+      <p>
+        If you have not contacted your instructor before the due date, 10% will be deducted from your final score for each day the
+        assignment is late. Assignments submitted more than seven days late will not be accepted and will receive a 0.
+      </p>
+    </section>
+
+    <!-- Generative AI tools -->
+    <section aria-labelledby="ai-tools">
+      <h2 id="ai-tools">Use of generative AI tools</h2>
+
+      <p>
+        The responsible use of AI tools is an important skill. We encourage you to explore how such tools work and to experiment with
+        different tools in order to understand their limits, effective uses, and potential harms and benefits.
+      </p>
+
+      <p>In this course, responsible use of AI tools means that you will:</p>
+      <ul>
+        <li>Develop skills for using AI tools to enrich and strengthen your work and support your learning.</li>
+        <li>Cite the use of AI tools and explain how they were used (for example, editing, translation, or research support).</li>
+        <li>Verify the accuracy of content generated by AI tools.</li>
+        <li>Seek to understand and address biases inherent in AI tools, noting their limitations when appropriate.</li>
+        <li>Not copy and paste AI output and present it as your own work.</li>
+        <li>Clearly distinguish your own work from the work of other sources, including AI.</li>
+      </ul>
+
+      <p>
+        In all use of AI tools, you must conform to UW’s policies on academic integrity and conduct
+        (see Student Governance &amp; Policies, chapter 209, section 7 on prohibited conduct).
+      </p>
+    </section>
+
+    <!-- Resources -->
+    <section aria-labelledby="resources">
+      <h2 id="resources">Student resources</h2>
+
+      <h3>Student resources overview</h3>
+      <p>
+        A number of challenges can affect your ability to bring your optimal attention and energy to a course. UW provides a range of
+        resources to help students cope with these challenges.
+      </p>
+
+      <h3>iSchool technology requirements</h3>
+      <p>
+        The iSchool maintains technology requirements for both online and residential students. These standards are updated annually.
+        Students who do not meet them may experience technology problems throughout the course.
+      </p>
+
+      <h3>iSchool learning technologies support</h3>
+      <p>
+        The iSchool Learning Technologies Support site offers a knowledge base for Canvas, VoiceThread, web conferencing systems,
+        and other learning technology tools.
+      </p>
+
+      <h3>UW Libraries</h3>
+      <p>
+        You may be required to access a number of databases through the UW Libraries. Some databases are public; others require
+        authentication. Information about logging in is available on the Libraries’ “Connecting to the Libraries” page.
+      </p>
+    </section>
+
+    <!-- Policies & conduct -->
+    <section aria-labelledby="policies">
+      <h2 id="policies">Policies, conduct, and community</h2>
+
+      <h3>Academic conduct</h3>
+      <p>
+        Please review the iSchool Academic Policies, which address academic and behavioral misconduct, academic integrity, copyright,
+        privacy, concerns about a course, and evaluation of student work.
+      </p>
+
+      <h3>Inclusivity</h3>
+      <p>
+        The Information School is committed to creating and sustaining an inclusive learning environment. Your unique experiences and
+        perspectives are valuable contributions to our collective learning.
+      </p>
+      <p>
+        We are committed to truth and rationality, the free exchange of ideas, and treating all with respect and dignity. We all share
+        responsibility for creating a learning community free of discrimination, harassment, and retaliation.
+      </p>
+
+      <h3>Land acknowledgement</h3>
+      <p>
+        We acknowledge that the University of Washington sits on the land of the Coast Salish peoples, which touches the shared
+        waters of all tribes and bands within the Suquamish, Tulalip, and Muckleshoot nations. At the beginning of the quarter, we
+        pause to consider the past, present, and future of this place.
+      </p>
+
+      <h3>Pronoun usage</h3>
+      <p>
+        To help create a welcoming, safe, and inclusive environment, you are invited to share your pronouns if you wish. Whether you
+        share them or not is up to you. Please use pronouns with care and respect.
+      </p>
+
+      <h3>Religious accommodations</h3>
+      <p>
+        Washington state law requires that UW provide a policy for accommodating student absences or significant hardship due to
+        reasons of faith or conscience or for organized religious activities. For full details and the request process, refer to the UW
+        Religious Accommodations policy.
+      </p>
+
+      <h3>Students with disabilities</h3>
+      <p>
+        To request academic accommodations due to a disability, contact Disability Resources for Students (DRS). If you have a letter
+        from DRS indicating that you require accommodations, please share it with the instructor so that appropriate arrangements can
+        be made.
+      </p>
+
+      <h3>Academic integrity</h3>
+      <p>
+        Academic life relies on respect for the ideas of others and their rights to those ideas. When you use the ideas or materials of
+        others, you must provide citation. The format is flexible as long as the source can be located and verified.
+      </p>
+      <p>
+        If you have questions about citation or academic honesty, ask your instructor. You are encouraged to visit the Writing Center
+        for help using citations ethically and effectively.
+      </p>
+
+      <h3>Affirmation of inclusion and safe space</h3>
+      <p>
+        The iSchool is committed to maintaining an environment where every member of the community feels welcome to participate in
+        the life of the university, free from harassment and discrimination.
+      </p>
+      <p>
+        This class is a safe space for all students. Lesbian, gay, bisexual, questioning, queer-identified, and transgender students
+        are welcome and encouraged to be an integral part of the class.
+      </p>
+
+      <h3>Copyright</h3>
+      <p>
+        Expressions of ideas in this class that are fixed in any tangible medium, such as digital or physical documents, are protected
+        by copyright law. This includes student work (assignments, discussion posts) and instructor materials (syllabus, assignments,
+        reading lists, lectures).
+      </p>
+      <p>
+        Within the bounds of fair use, you may copy these materials for your personal educational use, but redistribution beyond the
+        course community may violate copyright. If unsure, ask the instructor.
+      </p>
+
+      <h3>Privacy</h3>
+      <p>
+        To support an environment of rigorous discussion and open expression, we must respect each other’s right to privacy. Do not
+        share personally identifiable information about classmates or instructors without consent.
+      </p>
+
+      <h3>Student Code of Conduct</h3>
+      <p>
+        Good student conduct is important for maintaining a healthy course environment. Please familiarize yourself with the
+        University of Washington’s Student Code of Conduct.
+      </p>
+
+      <h3>Evaluation of student work</h3>
+      <p>
+        You may expect to receive comments and evaluations of assignments in a timely fashion. All work from the course will be
+        returned, with comments, within two weeks of the last class of the quarter if requested.
+      </p>
+
+      <h3>Tapir bonus</h3>
+      <p>
+        Thank you for reading the entire syllabus. If you are the first person in class to raise your hand and say “Tapir” before this
+        note is shown to the class, you will receive 2 points of extra credit. One person only—once it has been shown in class, the
+        offer is void.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      This syllabus page is formatted to support accessible reading and navigation for all students.
+      Last updated: November 2025.
+    </p>
+  </footer>
+</body>
+</html>
