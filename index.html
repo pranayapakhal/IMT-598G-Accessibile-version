@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IMT 598G – Accessible Course Sample</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+    header, footer {
+      margin-bottom: 2rem;
+    }
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    caption {
+      text-align: left;
+      font-weight: bold;
+      padding-bottom: 8px;
+    }
+    a {
+      color: #0062a1;
+    }
+    a:focus {
+      outline: 2px solid #ffb600;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">
+    Skip to main content
+  </a>
+
+  <header>
+    <h1>IMT 598G – Accessible Course Page Sample</h1>
+    <p>This is an example of an accessible course information page created for demonstration purposes.</p>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="overview-heading">
+      <h2 id="overview-heading">Course Overview</h2>
+      <p>
+        This page demonstrates accessible HTML structure including headings, alt text,
+        tables with proper markup, semantic sections, and focus-friendly links.
+      </p>
+    </section>
+
+    <section aria-labelledby="outcomes-heading">
+      <h2 id="outcomes-heading">Learning Outcomes</h2>
+      <ul>
+        <li>Understand accessible content structure</li>
+        <li>Recognize WCAG-aligned practices</li>
+        <li>Apply inclusive design principles to academic web content</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="schedule-heading">
+      <h2 id="schedule-heading">Weekly Schedule</h2>
+      <table>
+        <caption>Overview of weekly topics</caption>
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Material</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Introduction to Accessible Web Design</td>
+            <td><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">W3C Accessibility Intro</a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Content Structure and Semantics</td>
+            <td>HTML & Semantics Reading</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Resources and Support</h2>
